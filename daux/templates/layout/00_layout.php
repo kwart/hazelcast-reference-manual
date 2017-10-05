@@ -76,17 +76,23 @@
                 });
             });
         </script>
-        
+                
+    <?php
+
+    } ?>
+
         <script>
         $(function(){
         $(".Columns__left").scrollTop($('.Nav__item--active').offset().top - 200);
         });
         </script>
-
+        <script src="<?= $base_url; ?>themes/daux/js/anchor.js"></script>
+        <script type="text/javascript"> 
+      $(function(){
+        anchors.add();
+       });
+        </script>
         
-    <?php
-
-    } ?>
 
 </body>
 </html>
