@@ -10,7 +10,7 @@ This chapter lists the changes made to this document from the previous release.
 |[Phone Home](/100_Preface/900_Phone_Home.md)|Added information related to the new environment variable `HZ_PHONE_HOME_ENABLED` for disabling phone homes. 
 |[Consistency and Replication Model](/450_Consistency_and_Replication_Model.md)| Added as a new chapter to explain the full picture of Hazelcast's consistency model.
 |[Configuration Pattern Matcher](/500_Understanding_Configuration/550_Configuration_Pattern_Matcher.md)| Added as a new section.
-|[Dynamically Adding Configuration on a Cluster](/500_Understanding_Configuration/450_Dynamically_Adding_Configuration_on_a_Cluster.md)|Added as a new section.
+|[Dynamically Adding Configuration on a Cluster](/500_Understanding_Configuration/450_Dynamically_Adding_Data_Structure_Configuration_on_a_Cluster.md)|Added as a new section.
 |[User Code Deployment](/04_Setting_Up_Clusters/07_User_Code_Deployment_-_BETA.md)|Added "Example for Member Filtering Members" as a new section to explain how to use the `provider-filter` element.
 |[Client User Code Deployment](/04_Setting_Up_Clusters/07_Client_User_Code_Deployment_-_BETA.md)|Added as a new section.
 |[Failure Detector Configuration](/600_Setting_Up_Clusters/1200_Failure_Detector_Configuration.md)| Added as a new section to explain Hazelcast's Deadline and Phi Accrual failure detectors.
