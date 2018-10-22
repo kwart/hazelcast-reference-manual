@@ -1,0 +1,14 @@
+language: groovy
+dist: trusty
+sudo: required
+install:
+  - gradle build
+script:
+  - docker run --rm -it -u $(id -u):$(id -g) -v "$PWD":/mnt linkchecker/linkchecker --config=.linkcheckerrc -F html/utf_8/build/asciidoc/html5/linkchecker.html --check-extern  --no-robots --ignore-url '.*//groups.google.com/forum/.*' -r 1 build/asciidoc/html5/index.html || true
+deploy:
+  provider: pages
+  local-dir: build/asciidoc/html5
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  on:
+    branch: master
